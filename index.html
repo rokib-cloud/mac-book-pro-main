@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mac Book Pro</title>
+    <!-- tailwind cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <!-- website start from here  -->
+    <main class="font-sans text-stone-600">
+        <section class="">
+            <div class="flex">
+                <div class="w-5/12 ml-40 p-10">
+                    <img src="images/mac.png" alt="" width="500px">
+                </div>
+                <div class="w-5/12 p-10">
+                    <!-- page title -->
+                    <h1 class="text-5xl">Customize your blue 24-inch iMac with Apple Mi Chip.</h1>
+                    <!-- page info -->
+                    <p class="pt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto ad corrupti in
+                        voluptatum saepe
+                        quaerat. Perferendis hic aliquam deleniti quibusdam?</p>
+                    <!-- memory variant Options -->
+                    <h4 class="font-semibold mt-5">Memory</h4>
+                    <div class="flex">
+                        <button id="8gb-memory"
+                            class="hover:bg-stone-600 hover:text-white border-2 p-2 rounded mt-1">8GB unfilled
+                            Memory</button>
+                        <button id="16gb-memory"
+                            class="hover:bg-stone-600 hover:text-white border-2 ml-2 p-2 rounded mt-1">16GB unfilled
+                            Memory 180$</button>
+                    </div>
+                    <!-- storage variant option -->
+                    <h4 class="font-semibold mt-5">Storage</h4>
+                    <div class="flex">
+                        <button id="250-ssd-storage"
+                            class="hover:bg-stone-600 hover:text-white border-2 p-2 rounded mt-1">250GB SSD
+                            Storage</button>
+                        <button id="512-ssd-storage"
+                            class="hover:bg-stone-600 hover:text-white border-2 ml-2 p-2 rounded mt-1">512GB SSD
+                            Storage 100$</button>
+                        <button id="1tb-ssd-storage"
+                            class="hover:bg-stone-600 hover:text-white border-2 ml-2 p-2 rounded mt-1">1TB SSD
+                            Storage 180$</button>
+                    </div>
+                    <!-- delivery option -->
+                    <h4 class="font-semibold mt-5">Chose Your Delivery Option</h4>
+                    <div class="flex">
+                        <button id="free-delivery"
+                            class="hover:bg-stone-600 hover:text-white border-2 p-2 rounded mt-1">Friday,aug 25 Free
+                            Delivery</button>
+                        <button id="paid-delivery"
+                            class="hover:bg-stone-600 hover:text-white border-2 ml-2 p-2 rounded mt-1">Friday,aug 21
+                            Delivery Charge $20</button>
+                    </div>
+                    <!-- cost calculations -->
+                    <div class=" w-6/12 pt-2">
+                        <div class="flex mt-5">
+                            <div class="mt-2">
+                                <!-- best price -->
+                                <h4 class="font-semibold mt-2">Best Price</h4>
+                                <!-- extra memory cost -->
+                                <h4 class="font-semibold  mt-2">Extra Memory Cost</h4>
+                                <!-- extra storage cost -->
+                                <h4 class="font-semibold mt-2">Extra Storage Cost</h4>
+                                <!-- delivery cost -->
+                                <h4 class="font-semibold mt-2">Delivery Charge</h4>
+                                <!-- total cost -->
+                                <h4 class="font-semibold mt-3">Total price</h4>
+                            </div>
+
+                            <div class="ml-20 mt-2 ">
+                                <!-- best price -->
+                                <h4 class="font-semibold mt-2 ">$<span id="best-price">1299</span></h4>
+                                <!-- extra memory cost -->
+                                <h4 class="font-semibold mt-2">$<span id="extra-memory">00</span></h4>
+                                <!-- extra storage cost -->
+                                <h4 class="font-semibold mt-2">$<span id="extra-storage">00</span></h4>
+                                <!-- delivery cost -->
+                                <h4 class="font-semibold mt-2 ">$<span id="delivery-cost">00</span></h4>
+                                <!-- total cost -->
+                                <h4 class="font-semibold mt-3 ">$<span id="total">1299</span></h4>
+                            </div>
+                        </div>
+                        <div class="my-5">
+                            <h1 class="font-semibold">Add Promo Code</h1>
+                            <input id="offer-confirm" type="text" class="border p-1">
+
+                            <button disable id="offer-btn" class="bg-rose-700 text-white p-1 rounded px-3">
+                                Apply
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="">
+        <h1 class="text-center text-4xl">
+            Total : $<span id="sub-total">1299</span>
+        </h1>
+    </footer>
+
+    <script src="js/file.js"></script>
+</body>
+
+</html>
